@@ -27,7 +27,7 @@ gets to support is via FastCGI, which Shibboleth `does have
 <https://wiki.shibboleth.net/confluence/display/SHIB2/NativeSPFastCGIConfig>`_
 but the default distribution needs to be rebuilt to support it.  Nginx has
 support for FastCGI responders, but not for `FastCGI authorizers
-<http://www.fastcgi.com/drupal/node/22#S6.3>_`.  This is where things get
+<http://www.fastcgi.com/drupal/node/22#S6.3>`_.  This is where things get
 interesting (and eventually change).
 
 So, that said, Nginx does have support for sub-requests for allowing access,
