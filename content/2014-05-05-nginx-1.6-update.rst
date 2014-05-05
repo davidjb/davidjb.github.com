@@ -1,0 +1,28 @@
+Nginx with Shibboleth (FastCGI authorizer) support updated to 1.6
+#################################################################
+
+:category: Web
+:tags: Nginx, Shibboleth, FastCGI
+
+.. note::
+   This was discussed in a `previous post
+   <{filename}/2013-04-22-nginx-shibboleth-fastcgi.rst>`_. Various changes
+   have happened since then, improving the customisation process and updating
+   for newer versions of Nginx and associated add-on modules.
+
+I've updated the custom version of Nginx that supports operating with a
+Shibboleth SP to version 1.6.0, now that this version has become the lastest
+stable version.
+
+The build scripts located at
+https://github.com/jcu-eresearch/nginx-custom-build have been updated, along
+with the patches required to make the Shibboleth integration happen due to the
+changes in the Auth Request Module now being built into Nginx since version
+1.5.4.  Some other minor adjustments were required to keep patches up with
+module changes in Nginx's core.
+
+See
+https://github.com/jcu-eresearch/nginx-custom-build/blob/master/CHANGES.rst
+for a complete listing of changes. Feel free to watch the repository for
+changes and updates!
+
