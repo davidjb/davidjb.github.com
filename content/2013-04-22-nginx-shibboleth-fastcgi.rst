@@ -4,6 +4,17 @@ Integrating Nginx and a Shibboleth SP with FastCGI
 :category: Web
 :tags: Nginx, Shibboleth, FastCGI
 
+Update
+~~~~~~
+
+With changes in Nginx after version 1.5.4, the auth request module is now
+built in.  This means the following instruction have changed, yet again.
+For the latest information and build process, always see
+https://github.com/jcu-eresearch/nginx-custom-build.
+
+Original post
+~~~~~~~~~~~~~
+
 **tl;dr**:  You can have Nginx with Shibboleth. Rebuild Shibboleth with 
 FastCGI support, and recompile Nginx with a custom module:
 https://bitbucket.org/davidjb/ngx_http_auth_request_module.  You can now
