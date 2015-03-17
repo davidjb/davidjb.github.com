@@ -6,11 +6,12 @@ Integrating Nginx and a Shibboleth SP with FastCGI
 
 .. important::
 
-   The canonical place for this documentation is now the `Shibboleth wiki
-   <https://wiki.shibboleth.net/confluence/display/SHIB2/Integrating+Nginx+and+a+Shibboleth+SP+with+FastCGI>`_.
-   Any updates will be reflected there, and as a result, this page will
-   eventually become outdated.  Please contribute to that page or get in touch
-   below if you have questions or comments!
+   The canonical place for this documentation is now the
+   `nginx-http-shibboleth
+   <https://github.com/nginx-shib/nginx-http-shibboleth>`_ custom Nginx module
+   GitHub repository.  All updates will be reflected there, and as a result,
+   this page **has** become **severely** outdated.  Please contribute to that
+   repository!
 
 .. note::
 
@@ -23,10 +24,9 @@ Original post
 ~~~~~~~~~~~~~
 
 **tl;dr**:  You can have Nginx with Shibboleth. Rebuild Shibboleth with 
-FastCGI support, and recompile Nginx with a custom module:
-https://bitbucket.org/davidjb/ngx_http_auth_request_module.  You can now
+FastCGI support, and recompile Nginx with a custom module.  You can now
 run the Shibboleth FastCGI authorizer and responder applications and
-successfully authenticate!  
+successfully authenticate!
 
 .. contents::
    :local:
@@ -51,11 +51,10 @@ interesting (and eventually change).
 So, that said, Nginx does have support for sub-requests for allowing access,
 and the `Auth Request <http://mdounin.ru/hg/ngx_http_auth_request_module/>`_
 gets very close in terms of providing the functionality we need for a FastCGI
-authorizer.  However, that module only allow(ed) for the
-sub-request to respond with an *allow* or *deny* response.  But, some minor
-changes I was able to make to my
-`own fork <https://bitbucket.org/davidjb/ngx_http_auth_request_module>`_ of
-that Auth Request module allows the auth request to follow the specification.
+authorizer.  However, that module only allow(ed) for the sub-request to
+respond with an *allow* or *deny* response.  But, some minor changes I was
+able to make to my fork that Auth Request module allows the auth request to
+follow the specification.
 
 Cautionary note
 ^^^^^^^^^^^^^^^
@@ -85,11 +84,10 @@ accessed. We'll use this information next.
 Nginx with FastCGI Authorizer support
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The next step is sorting out Nginx with suitable support for FastCGI 
-authorizers.  As mentioned above, I was able to delve into Nginx and make my 
-`own fork <https://bitbucket.org/davidjb/ngx_http_auth_request_module>`_ of
-that Auth Request module allows the auth request to follow the specification
-(see caveat above about request/response bodies).
+The next step is sorting out Nginx with suitable support for FastCGI
+authorizers.  As mentioned above, I was able to delve into Nginx and make my
+fork of that Auth Request module allows the auth request to follow the
+specification (see caveat above about request/response bodies).
 
 #. Compile Nginx with the custom Auth request module and the
    `Headers More <http://wiki.nginx.org/HttpHeadersMoreModule>`_ module 
