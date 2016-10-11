@@ -5,30 +5,30 @@ Linux: Printing at James Cook University (or, Fuji Xerox Printers on 64 bit Linu
 :category: Linux
 :slug: linux-printing-at-james-cook-university
 
-.. note:: **Update 2016**: this still works on Ubuntu 16.04. Also, I happened
-   across `another blog
-   <https://robotsfuckyeahalloneword.svbtle.com/fuji-xerox-on-64-bit-linux>`_
-   which makes a very valliant effort to get the i386 RPM working on 64-bit
-   Linux but then the author resorts to using a VM with 32-bit Ubuntu. The
-   following works perfectly on 64-bit natively because you're actually
-   building the binaries from source.  Sure, the drivers are from 2006 but
-   they're fine.  I guess if it ain't broke...
-
-   Also, this works on Linux and Ubuntu to support all the FX models like
-   ApeosPort-II C7500 / C6500 / C5400, DocuCentre-II C7500 / C6500 /
-   C5400, ApeosPort-II C4300 / C3300 / C2200DocuCentre-II C4300 / C3300 /
-   C2200, ApeosPort-II 7000 / 6000 / 5000, DocuCentre-II 7000 / 6000 / 5000,
-   ApeosPort-II 4000 / 3000, DocuCentre-II 4000 / 3000 and anything I've tried
-   in between.  In particular, my printer is currently a ApeosPort-V C2275 and
-   even follow-me printing works via our print share.
-
-   Alternatively, if you can live without using the FX drivers, the generic
-   PostScript PPDs on Ubuntu are fine too.
-
 Printing at JCU is difficult on Linux, given JCU exists as a Windows
 environment. The fact that Xerox Postscript drivers for Linux aren't
 exactly straight forward to install doesn't help either - they require
 custom filter applications to be compiled.
+
+    **Update 2016**: this still works on Ubuntu 16.04. Also, I happened
+    across `another blog <https://robotsfuckyeahalloneword.svbtle.com/fuji-xerox-on-64-bit-linux>`_
+    which makes a very valliant effort to get the i386 RPM working on 64-bit
+    Linux but then the author resorts to using a VM with 32-bit Ubuntu. The
+    following works perfectly on 64-bit natively because you're actually
+    building the binaries from source.  Sure, the drivers are from 2006 but
+    they're fine.  I guess if it ain't broke...
+
+    Also, this works on Linux and Ubuntu to support all the FX models like
+    ApeosPort-II C7500 / C6500 / C5400, DocuCentre-II C7500 / C6500 /
+    C5400, ApeosPort-II C4300 / C3300 / C2200DocuCentre-II C4300 / C3300 /
+    C2200, ApeosPort-II 7000 / 6000 / 5000, DocuCentre-II 7000 / 6000 / 5000,
+    ApeosPort-II 4000 / 3000, DocuCentre-II 4000 / 3000 and anything I've tried
+    in between.  In particular, my printer is currently a ApeosPort-V C2275 and
+    even follow-me printing works via our print share.
+
+    Alternatively, if you can live without using the FX drivers, the generic
+    PostScript PPDs on Ubuntu are fine too.
+
 
 Setting up the drivers
 ----------------------
