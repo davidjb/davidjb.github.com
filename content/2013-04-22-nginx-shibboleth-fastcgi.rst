@@ -4,14 +4,18 @@ Integrating Nginx and a Shibboleth SP with FastCGI
 :category: Web
 :tags: Nginx, Shibboleth, FastCGI
 
-.. important::
+New location!
+~~~~~~~~~~~~~
 
-   The canonical place for this documentation is now the
-   `nginx-http-shibboleth
-   <https://github.com/nginx-shib/nginx-http-shibboleth>`_ custom Nginx module
-   GitHub repository.  All updates will be reflected there, and as a result,
-   this page **has** become **severely** outdated.  Please contribute to that
-   repository!
+The canonical place for this documentation is now the
+`nginx-http-shibboleth
+<https://github.com/nginx-shib/nginx-http-shibboleth>`_ custom Nginx module
+GitHub repository.  All updates will be reflected there, and as a result,
+this page **has** become **severely** outdated.  Please contribute to that
+repository!
+
+Original post
+~~~~~~~~~~~~~
 
 .. note::
 
@@ -20,8 +24,6 @@ Integrating Nginx and a Shibboleth SP with FastCGI
    For the latest information and build process, always see
    https://github.com/jcu-eresearch/nginx-custom-build.
 
-Original post
-~~~~~~~~~~~~~
 
 **tl;dr**:  You can have Nginx with Shibboleth. Rebuild Shibboleth with 
 FastCGI support, and recompile Nginx with a custom module.  You can now
