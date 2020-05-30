@@ -3,6 +3,7 @@
 
 :category: Disclosure
 :tags: Security, Responsible Disclosure, Research
+:slug: shared-auedupersonsharedtoken-security-disclosure
 
 **Outline**: for an undisclosed period of time until 28 June 2019, all users
 from `The University of Notre Dame Australia`_ (ND) accessing federated,
