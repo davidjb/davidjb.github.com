@@ -75,7 +75,7 @@ have my improvements merged back into the main plugin, too.
 Install the Shibboleth SP with FastCGI support
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check out my post regarding `Shibboleth and FastCGI <|filename|2013-04-22-shibboleth-fastcgi.rst>`_.  It will step you though either how to install or build
+Check out my post regarding `Shibboleth and FastCGI <{filename}2013-04-22-shibboleth-fastcgi.rst>`_.  It will step you though either how to install or build
 the Shibboleth SP for your system and get the FastCGI applications up and
 running.
 

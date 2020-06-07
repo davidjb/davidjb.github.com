@@ -87,5 +87,5 @@ don't get prompted to enter a user name and password -- if this is the case,
 then just open the ``Printers`` application, view your printer's print queue,
 right-click on your job and ``Authenticate`` it.
 
-.. _fxlinuxprint-src-1.0.1.tar.gz: |filename|../files/fxlinuxprint-src-1.0.1.tar.gz
+.. _fxlinuxprint-src-1.0.1.tar.gz: {static}/files/fxlinuxprint-src-1.0.1.tar.gz
 .. _Japanese Xerox site: http://www.fujixerox.co.jp/download/apeosport/download/c4300series/linux_module.html
