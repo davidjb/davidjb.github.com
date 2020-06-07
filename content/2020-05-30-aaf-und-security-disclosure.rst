@@ -19,7 +19,7 @@ operates – impact could range from disclosure of one account's details through
 to complete loss of control and data.
 
 This disclosure is being made in the public interet because at the time of
-writing (30 May 2020), no-one else has done so.
+writing (30 May 2020) no-one else has done so.
 
 Introduction
 ============
