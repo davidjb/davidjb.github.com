@@ -13,7 +13,13 @@ This identifier is frequently used as a unique user identifier (username);
 thus for systems where this was the case, all users from ND were considered
 the same person, causing permission assigned to one user to effectively apply
 to **all** members of the ND community, breaking authentication and risking
-information exposure to sensitive resources.
+information exposure to sensitive resources. The level of impact on a given
+system depends on what permissions a given ND user had and how a systme
+operates – impact could range from disclosure of one account's details through
+to complete loss of control and data.
+
+This disclosure is being made in the public interet because at the time of
+writing (30 May 2020), no-one else has done so.
 
 Introduction
 ============
@@ -81,12 +87,21 @@ Discussions continued with the Portal's system administrators and the ND staff
 members until it was ascertained that the user identifier,
 `auEduPersonSharedToken`_, was identical between users. The consequence of
 this is broken authentication, as all ND users would thus present themselves
-as the same all-access, trusted user on the Portal, and access would continue
-as this identity permanently as long the ND IdP configuration continued
-functioning in this manner. When the next ND user logged in, the Portal
-detected the change in email and common name and diligently updated its own
-user database – as would happen with a name change say if someone were
+as the same trusted user on the Portal with elevated permissions, and access
+would continue as this identity permanently as long the ND IdP configuration
+continued functioning in this manner. When the next ND user logged in, the
+Portal detected the change in email and common name and diligently updated its
+own user database – as would happen with a name change say if someone were
 married or legally changed their name.
+
+For this system, ordinary users were granted a degree of elevated permissions,
+being able to read and modify all site content, including that belonging to
+other users. The reaosn for this is that *one* ND user was a trusted member in
+the system, thus inadvertently extending that trust to *all* ND users due to
+all ND users sharing the same user identity.  For other systems, the impact
+depends on the level of permission granted to *any* given ND user and the type
+of system in play – if that ND user was a superuser in a terminal-based
+application, then any ordinary user could gain root privileges.
 
 At this point, the AAF support were contacted by phone call to seek their
 responsible disclosure processes and alert them of the impending situation,
