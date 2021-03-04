@@ -14,11 +14,11 @@ thus for systems where this was the case, all users from ND were considered
 the same person, causing permission assigned to one user to effectively apply
 to **all** members of the ND community, breaking authentication and risking
 information exposure to sensitive resources. The level of impact on a given
-system depends on what permissions a given ND user had and how a systme
+system depends on what permissions a given ND user had and how a system
 operates – impact could range from disclosure of one account's details through
 to complete loss of control and data.
 
-This disclosure is being made in the public interet because at the time of
+This disclosure is being made in the public interest because at the time of
 writing (30 May 2020) no-one else has done so.
 
 Introduction
@@ -66,7 +66,7 @@ On the morning of 13 June 2019, I was alerted to a concern from a
 non-technical system administrator of a portal I operate ("the Portal") at
 James Cook University (JCU) where a given user had been able to sign in and
 access secure resources without seemingly been given access.  The reporting
-party was from ND and had coopted several colleagues to test logging into the
+party was from ND and had co-opted several colleagues to test logging into the
 Portal and each of them was able to, without fail, obtain full-site level
 access to all sensitive content on the Portal.
 
@@ -96,7 +96,7 @@ married or legally changed their name.
 
 For this system, ordinary users were granted a degree of elevated permissions,
 being able to read and modify all site content, including that belonging to
-other users. The reaosn for this is that *one* ND user was a trusted member in
+other users. The reason for this is that *one* ND user was a trusted member in
 the system, thus inadvertently extending that trust to *all* ND users due to
 all ND users sharing the same user identity.  For other systems, the impact
 depends on the level of permission granted to *any* given ND user and the type
